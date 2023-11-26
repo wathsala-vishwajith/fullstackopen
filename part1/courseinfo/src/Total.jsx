@@ -1,8 +1,9 @@
-const Total =  (props) => {
-    const sum = props.exercises.reduce((partialSum,a) => partialSum+a,0);
-    return(
-        <p>Number of exercises {sum}</p>
-    )
-}
+const Total = (props) => {
+  console.log(props);
+  const sum = props.exercises.reduce(function (acc, obj) {
+    return acc + obj.exercises;
+  }, 0);
+  return <p>Number of exercises {sum}</p>;
+};
 
-export default Total
+export default Total;
