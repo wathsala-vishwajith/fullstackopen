@@ -1,8 +1,12 @@
+import Part from "./Part"
+
 const Content =  (props) => {
     return (
-    <div>
-        <p>{props.course} {props.value}</p>
-    </div>
+        <>
+    <Part item={props.items[0]}/>
+    <Part item={props.items[1]}/>
+    <Part item={props.items[2]}/>
+    </>
     )
 }
 
